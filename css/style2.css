@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #201b2c;
+}
+
+.cadastro_principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header_img {
+    width: 75px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.logo {
+    color: #f169d4;
+    font-size: 2vw;
+    margin: 0;
+}
+
+.cadastro_card {
+    width: 40%;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.cadastro_card > h1 {
+    color: #cc3bad;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center; 
+    width: 100%;
+}
+
+.textfield {
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textfield > input {
+    width: 25vw;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 5px;
+    align-self: flex-start; 
+    padding-left: 8%;
+    padding-left: 0;
+}
+
+.textfield > input::placeholder{
+    color: #f0ffff94;
+    width: 90%;
+}
+
+.botao_cadastrar {
+    width: 20vw;
+    padding: 16px 0px;
+    margin: 25px 0 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #e74bc6;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #4b1740;
+    
+}
+
+.login_link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login_link > p {
+    color: #f0ffffde;
+    font-size: 10pt;
+    font-size: 1vw;
+}
+
+.login_link > p > a {
+    color: #e74bc6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.login_link > p > a:hover {
+    text-decoration: underline;
+}
+

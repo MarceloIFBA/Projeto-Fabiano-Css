@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div class="cadastro_principal">
+        <div class="header">
+            <img src="AstronautCat.png" alt="Imagem" class="header_img">
+            <h1 class="logo">GamesGalaxy</h1>
+            
+            
+        </div>
+
+        <div class="cadastro_card">
+            <h1>Cadastro</h1>
+
+            <form action="submit_cadastro" method="POST">
+                <div class="textfield">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="Insira seu Nome" required>
+                </div>
+                <div class="textfield">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Insira seu Email" required>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" placeholder="Crie uma Senha" required>
+                </div>
+                <div class="textfield">
+                    <label for="confirmar_senha">Confirmar Senha:</label>
+                    <input type="password" name="confirmar_senha" placeholder="Confirme sua Senha" required>
+                </div>
+                <button type="submit" class="botao_cadastrar">Cadastrar</button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>
