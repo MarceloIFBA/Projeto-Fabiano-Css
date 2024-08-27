@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #201b2c;
+    color: #f0ffffde;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 20vw;
+    height: auto;
+}
+
+.slogan {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #e74bc6; 
+    font-weight: 800; 
+    font-size: 1.8vw; 
+     font-family: 'Noto Sans', sans-serif;
+}
+
+.links {
+    width: 100%;
+    background: #2f2841;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.links ul li {
+    margin: 0 15px;
+}
+
+.links ul li a {
+    color: #e74bc6; 
+    text-decoration: none; 
+    font-weight: 800; 
+    font-size: 1.5vw; 
+}
+
+.links ul li a:hover {
+    text-decoration: underline; 
+}
+
+.genres_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.genre {
+    background: #2f2841;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.genre:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 50px #000000b3;
+}
+
+.genre img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.genre img:hover {
+    transform: scale(1.1);
+}
+
+.genre h2 {
+    color: #e74bc6;
+    font-weight: 800;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0;
+}
+
+.genre a {
+    text-decoration: none; 
+}
+
+.genre a:hover {
+    text-decoration: none; 
+}
