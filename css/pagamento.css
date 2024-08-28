@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
@@ -75,4 +77,34 @@ header {
     font-size: 1.5vw;
     text-align: center;
     margin: 0;
+}
+
+.links {
+    width: 100%;
+    background: #2f2841;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.links ul li {
+    margin: 0 15px;
+}
+
+.links ul li a {
+    color: #e74bc6; 
+    text-decoration: none; 
+    font-weight: 800; 
+    font-size: 1.5vw; 
+}
+
+.links ul li a:hover {
+    text-decoration: underline; 
 }
