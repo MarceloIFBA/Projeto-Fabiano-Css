@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #201b2c;
+    color: #f0ffffde;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 20vw;
+    height: auto;
+}
+
+.titulo {
+    color: #e74bc6; 
+    font-weight: 800; 
+    font-size: 2.5vw; 
+    text-align: right;
+    
+}
+
+.games_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.game {
+    background: #2f2841;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.game img {
+    width: 220px; 
+    height: 220px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.game img:hover {
+    transform: scale(1.1);
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game-info h2 {
+    color: #e74bc6;
+    font-weight: 800;
+    font-size: 1.8vw;
+    margin: 0;
+}
+
+.game-info .estilo {
+    color: #f0ffffde;
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin-top: 5px;
+}
+
+.game-info .descricao {
+    color: #f0ffffde;
+    font-size: 1vw;
+    margin-top: 10px;
+}
+
+.game-info .preco {
+    color: #00ff7f;
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin-top: 10px;
+}
+
+.game-info .comprar {
+    background-color: #e74bc6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+    width: 200px; 
+}
+
+.game-info .comprar:hover {
+    background-color: #c03c9f;
+    transform: scale(1.05);
+}
+
+.links {
+    width: 100%;
+    background: #2f2841;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.links ul li {
+    margin: 0 15px;
+}
+
+.links ul li a {
+    color: #e74bc6; 
+    text-decoration: none; 
+    font-weight: 800; 
+    font-size: 1.5vw; 
+}
+
+.links ul li a:hover {
+    text-decoration: underline; 
+}
