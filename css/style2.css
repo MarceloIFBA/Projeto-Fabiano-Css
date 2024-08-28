@@ -31,9 +31,8 @@ body{
 }
 
 .logo {
-    color: #f169d4;
-    font-size: 2vw;
-    margin: 0;
+    width: 20vw;
+    height: auto;
 }
 
 .cadastro_card {
@@ -107,26 +106,3 @@ body{
     box-shadow: 0px 10px 40px -12px #4b1740;
     
 }
-
-.login_link {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.login_link > p {
-    color: #f0ffffde;
-    font-size: 10pt;
-    font-size: 1vw;
-}
-
-.login_link > p > a {
-    color: #e74bc6;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1vw;
-}
-
-.login_link > p > a:hover {
-    text-decoration: underline;
-}
-
