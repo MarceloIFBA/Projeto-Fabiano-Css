@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #201b2c;
+    color: #f0ffffde;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.5vw; 
+}
+
+.logo img {
+    width: 15vw;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    margin: 0;
+}
+
+.menu ul li a {
+    color: #e74bc6;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+
+.menu ul li a.active {
+    text-decoration: underline;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #e74bc6; /* Mesma cor das letras */
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #e74bc6;
+    font-weight: 800;
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
+
+.suporte {
+    background: #2f2841;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.suporte h2 {
+    color: #e74bc6;
+    font-weight: 800;
+    font-size: 1.8vw;
+    margin-bottom: 10px;
+}
+
+.suporte p {
+    font-size: 1.2vw;
+    line-height: 1.6;
+    margin: 0;
+}
+
+footer {
+    background: #2f2841;
+    padding: 20px;
+    text-align: center;
+    color: #e74bc6;
+    font-size: 1vw;
+}
