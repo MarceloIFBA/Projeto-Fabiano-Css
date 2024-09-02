@@ -121,3 +121,11 @@ header {
 .genre a:hover {
     text-decoration: none; 
 }
+
+footer {
+    background: #2f2841;
+    padding: 20px;
+    text-align: center;
+    color: #e74bc6;
+    font-size: 1vw;
+}
