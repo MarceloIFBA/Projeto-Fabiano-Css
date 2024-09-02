@@ -63,7 +63,7 @@ header {
     text-decoration: underline; 
 }
 
-.genres_container {
+.generos_container {
     width: 100%;
     max-width: 1200px;
     margin: 20px auto;
@@ -75,7 +75,7 @@ header {
     box-sizing: border-box;
 }
 
-.genre {
+.genero {
     background: #2f2841;
     border-radius: 10px;
     box-shadow: 0px 10px 40px #00000056;
@@ -88,12 +88,12 @@ header {
     cursor: pointer;
 }
 
-.genre:hover {
+.genero:hover {
     transform: scale(1.05);
     box-shadow: 0px 15px 50px #000000b3;
 }
 
-.genre img {
+.genero img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -102,11 +102,11 @@ header {
     transition: transform 0.3s ease;
 }
 
-.genre img:hover {
+.genero img:hover {
     transform: scale(1.1);
 }
 
-.genre h2 {
+.genero h2 {
     color: #e74bc6;
     font-weight: 800;
     font-size: 1.5vw;
@@ -114,12 +114,21 @@ header {
     margin: 0;
 }
 
-.genre a {
+.genero a {
     text-decoration: none; 
 }
 
-.genre a:hover {
+.genero a:hover {
     text-decoration: none; 
+}
+
+.generos-titulo {
+    color: #e74bc6;
+    text-align: left;
+    font-weight: 800;
+    font-size: 1.7vw;
+    margin: 20px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 footer {
