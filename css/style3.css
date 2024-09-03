@@ -86,6 +86,7 @@ header {
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    
 }
 
 .genero:hover {
@@ -94,12 +95,12 @@ header {
 }
 
 .genero img {
-    width: 100%;
+    width: calc(100% - 10px);
     height: auto;
     object-fit: cover;
     border-radius: 10px;
     border: 5px solid #e74bc6;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
 
@@ -141,6 +142,13 @@ footer {
     font-size: 1vw;
 }
 
+.slogan2 {
+    color: #ffffff; 
+    font-size: 1.2vw; 
+    text-align: center; 
+    margin: 10px 0; 
+    font-family: 'Noto Sans', sans-serif;
+}
 
 
 
