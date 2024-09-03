@@ -32,25 +32,11 @@ header {
     gap: 20px;
 }
 
-.menu ul li {
-    margin: 0;
-}
-
 .menu ul li a {
     color: #e74bc6;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.2vw;
-}
-
-.menu ul li a.active {
-    text-decoration: underline;
-    text-decoration-color: #e74bc6;
-}
-
-.menu ul li a:hover {
-    text-decoration: underline;
-    text-decoration-color: #e74bc6;
 }
 
 main {
@@ -64,111 +50,91 @@ main {
 h1 {
     color: #e74bc6;
     font-weight: 800;
-    font-size: 2vw;
+    font-size: 3vw;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 h2 {
     color: #e74bc6;
     font-weight: 800;
-    font-size: 1.8vw;
+    font-size: 2vw;
     margin-bottom: 10px;
-}
-
-.forum {
-    background: #2f2841;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 10px 40px #00000056;
-}
-
-.forum-secao {
-    margin-bottom: 20px;
-}
-
-.forum-secao h3 {
-    font-size: 1.5vw;
-    margin-bottom: 10px;
-}
-
-.forum-secao ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.forum-secao ul li {
-    margin-bottom: 10px;
-}
-
-.forum-secao ul li a {
-    color: #e74bc6;
-    text-decoration: none;
-    font-size: 1.2vw;
-}
-
-.forum-secao ul li a:hover {
-    text-decoration: underline;
-}
-
-.destaques {
-    background: #2f2841;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 10px 40px #00000056;
-}
-
-.destaques .destaque2 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.destaques .destaque2 img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.destaques .destaque2 h3 {
-    margin: 0;
-    color: #e74bc6;
-    font-size: 1.5vw;
-}
-
-.destaques .destaque2 p {
-    margin: 0;
-    font-size: 1.2vw;
-}
-
-.participar {
-    background: #2f2841;
-    border-radius: 10px;
-    padding: 20px;
     text-align: center;
+}
+
+.formulario-contato {
+    background: #2f2841;
+    border-radius: 10px;
+    padding: 20px 40px; 
+    margin-bottom: 20px;
     box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+    padding-left: 20px;
 }
 
-.participar p {
-    margin-bottom: 15px;
+.formulario-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo label {
     font-size: 1.2vw;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #f0ffffde;
 }
 
-.participar .btn {
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2vw;
+    border: 1px solid #e74bc6;
+    border-radius: 5px;
+    background: #3b334d;
+    color: #f0ffffde;
+}
+
+.campo input:focus, .campo textarea:focus {
+    outline: none;
+    border-color: #e74bc6;
+}
+
+.botao-enviar {
     background: #e74bc6;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 80px;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
     font-size: 1.2vw;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
 }
 
-.participar .btn:hover {
+.botao-enviar:hover {
     background: #d63b8c;
+}
+
+.informacoes-contato {
+    background: #2f2841;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    text-align: center;
+}
+
+.informacoes-contato p {
+    font-size: 1.2vw;
+}
+
+.informacoes-contato a {
+    color: #e74bc6;
+    text-decoration: none;
 }
 
 footer {
