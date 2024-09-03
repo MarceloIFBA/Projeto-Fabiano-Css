@@ -12,24 +12,40 @@ body {
 
 header {
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.logo img {
-    width: 20vw;
-    height: auto;
 }
 
 .titulo {
-    color: #e74bc6; 
-    font-weight: 800; 
-    font-size: 2.5vw; 
-    text-align: left;
-    margin-left: 20px;
+    color: #e74bc6;
+    font-weight: 800;
+    font-size: 2vw;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color:#2f2841 ;
+}
+
+.logo img {
+    width: 15vw;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: #e74bc6;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2vw;
 }
 
 .conteudo_pagamentos {
@@ -79,35 +95,6 @@ header {
     margin: 0;
 }
 
-.links {
-    width: 100%;
-    background: #2f2841;
-    padding: 10px 20px;
-    box-sizing: border-box;
-}
-
-.links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.links ul li {
-    margin: 0 15px;
-}
-
-.links ul li a {
-    color: #e74bc6; 
-    text-decoration: none; 
-    font-weight: 800; 
-    font-size: 1.5vw; 
-}
-
-.links ul li a:hover {
-    text-decoration: underline; 
-}
 
 footer {
     background: #2f2841;
