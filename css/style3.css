@@ -99,7 +99,7 @@ header {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    border: 5px solid #e74bc6;
+    border: 5px solid #db37b8;
     margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
