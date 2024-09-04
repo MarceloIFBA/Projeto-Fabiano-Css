@@ -150,8 +150,31 @@ footer {
     font-family: 'Noto Sans', sans-serif;
 }
 
+.pesquisa1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
 
+.pesquisa2 input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1.2vw;
+    border: 2px solid #db37b8;
+    border-radius: 5px;
+    background-color: #2f2841;
+    color: #f0ffffde;
+    box-shadow: 0px 10px 40px #00000056;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
 
+.pesquisa2 input::placeholder {
+    color: #f0ffffde;
+}
 
-
-
+.pesquisa2 input:focus {
+    outline: none;
+    border-color: #00ff7f;
+    box-shadow: 0px 15px 50px #000000b3;
+}
