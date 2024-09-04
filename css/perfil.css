@@ -177,8 +177,9 @@ main {
 .amigos h2 {
     color: #e74bc6;
     font-weight: 800;
-    font-size: 1.8vw;
-    margin-bottom: 10px;
+    font-size: 2vw;
+    text-align: center;
+    background-color: #201b2c;
 }
 
 .amigos ul {
