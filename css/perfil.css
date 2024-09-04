@@ -221,6 +221,20 @@ main {
     margin-top: 20px;
 }
 
+.link {
+    display: block;
+    text-align: right;
+    color: #e74bc6;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 1.1vw;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
 footer {
     background: #2f2841;
     padding: 20px;
