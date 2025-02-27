@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #201b2c;
+    color: #f0ffffde;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 15vw;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: #e74bc6;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #e74bc6;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.alterar-senha {
+    background: #2f2841;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.alterar-senha h2 {
+    color: #e74bc6;
+    font-weight: 800;
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    font-size: 1.2vw;
+    margin-bottom: 5px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1vw;
+}
+
+.botao {
+    background: #e74bc6;
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    display: block;
+    margin: 15px auto 0;
+    width: fit-content;
+}
+
+.botao:hover {
+    background: #d63b8c;
+}
+
+footer {
+    background: #2f2841;
+    padding: 20px;
+    text-align: center;
+    color: #e74bc6;
+    font-size: 1vw;
+}
