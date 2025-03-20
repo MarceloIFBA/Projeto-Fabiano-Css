@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("As senhas não coincidem!");
             return;
         }
+        
 
         const dadosUsuario = {
             nome: nome,

@@ -1,39 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("loginForm").addEventListener("submit", function (event) {
+    const botaoEntrar = document.querySelector(".botao_entrar");
+
+    botaoEntrar.addEventListener("click", async function (event) {
         event.preventDefault(); 
+    
+        
+        const identificador = document.querySelector("input[name='identificador']").value;
+        const senha = document.querySelector("input[name='senha']").value;
 
-        const identificador = document.getElementById("identificador").value.trim();
-        const senha = document.getElementById("senha").value.trim();
-
-        if (identificador === "" || senha === "") {
-            alert("Por favor, preencha todos os campos.");
+        
+        if (!identificador || !senha) {
+            alert("Por favor, preencha todos os campos antes de continuar!");
             return;
         }
 
-    
-        fetch("http://localhost:8080/clientes", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ identificador, senha })
-        })
-        .then(response => {
+        try {
+            
+            const response = await fetch("http://localhost:8080/clientes");
+            
             if (!response.ok) {
-                throw new Error("Erro ao fazer login");
+                throw new Error("Erro ao conectar ao servidor!");
             }
-            return response.json();
-        })
-        .then(data => {
-            alert("Login bem-sucedido!");
-            window.location.href = "home.html"; 
-        })
-        .catch(error => {
-            alert("Falha no login. Verifique suas credenciais.");
-        });
+
+            const usuarios = await response.json();
+
+            const usuarioValido = usuarios.find(usuario => 
+                (usuario.email === identificador || usuario.usuario === identificador) &&
+                usuario.senha === senha
+            );
+
+            if (usuarioValido) {
+                alert("Login realizado com sucesso!");
+                window.location.href = "home.html"; 
+            } else {
+                alert("Usuário ou senha incorretos!");
+            }
+        } catch (error) {
+            console.error("Erro ao validar login:", error);
+            alert("Ocorreu um erro ao verificar suas credenciais. Tente novamente mais tarde.");
+        }
     });
-
-    alert("Login bem-sucedido!");
-    window.location.href = "home.html"; 
-
 });
