@@ -18,8 +18,8 @@
 
     <div class="links">
         <ul>
-            <li><a href="comunidade.html">Comunidade</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="home.html">Página Inicial</a></li>
+            <li><a href="#">Vendas</a></li>
             <li><a href="suporte.html">Suporte</a></li>
         </ul>
     </div>
@@ -31,17 +31,24 @@
     
     <div class="container">
         <h2>Cadastro Jogo:</h2>
-        <input type="text" id="titulo" placeholder="Título do Jogo">
-        <select id="genero">
-            <option value="">Selecione um Gênero</option>
-            <option value="Ação">Ação</option>
-            <option value="RPG">Aventura</option>
-            <option value="Aventura">RPG</option>
-            <option value="Moba">MOBA</option>
-            <option value="Simulacao">Simulação</option>
-            <option value="Sobrevivencia">Sobrevivência</option>
-        </select>
-        <input type="number" id="preco" placeholder="Preço (R$)">
+        <div class="cadastro-campos">
+            <label for="titulo">Título do Jogo:</label>
+            <input type="text" id="titulo" placeholder="Título do Jogo">
+
+            <label for="genero">Gênero:</label>
+            <select id="genero">
+                <option value="">Selecione um Gênero</option>
+                <option value="Ação">Ação</option>
+                <option value="RPG">RPG</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Moba">MOBA</option>
+                <option value="Simulacao">Simulação</option>
+                <option value="Sobrevivencia">Sobrevivência</option>
+            </select>
+
+            <label for="preco">Preço (R$):</label>
+            <input type="number" id="preco" placeholder="Preço (R$)">
+        </div>
         <button onclick="cadastrarJogo()">Cadastrar</button>
     </div>
 
@@ -59,10 +66,8 @@
         </tbody>
     </table>
     
-
     <footer>
         <p>&copy; 2024 GamesGalaxy. Todos os direitos reservados.</p>
-    
     </footer>
 
     <script src="/style/cadastroJogo.js"></script>
